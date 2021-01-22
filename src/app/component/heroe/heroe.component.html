@@ -1,0 +1,28 @@
+<h1>{{heroe.nombre | uppercase}} <small>({{heroe.aparicion|date:"y" }})</small></h1>
+<hr>
+
+<div class="row row-cols-2 animated fast fadeIn">
+
+    <div class="col-md-4">
+        <div class="card">
+            <img [src]="heroe.img" [alt]="heroe.nombre" class="img-fluid">
+            <br>
+            <a (click)="regresarGaleria()" class="btn btn-outline-danger">Regresar</a>
+
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <div class="col-md-8">
+        <h3>{{heroe.nombre}}</h3>
+        <hr>
+        <p>{{heroe.bio}}</p>
+        <div>
+            <img src="assets/img/{{heroe.casa}}.png" alt="" class="img-logo img-thumbnail">
+        </div>
+    </div>
+
+
+</div>
